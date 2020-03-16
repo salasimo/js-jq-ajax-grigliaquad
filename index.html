@@ -3,60 +3,27 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js" charset="utf-8"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <title>Griglia 6x6</title>
     </head>
     <body>
         <div class="container">
-            <div class="riga riga1">
-                <div class="casella casella1"></div>
-                <div class="casella casella2"></div>
-                <div class="casella casella3"></div>
-                <div class="casella casella4"></div>
-                <div class="casella casella5"></div>
-                <div class="casella casella6"></div>
-            </div>
-            <div class="riga riga2">
-                <div class="casella casella1"></div>
-                <div class="casella casella2"></div>
-                <div class="casella casella3"></div>
-                <div class="casella casella4"></div>
-                <div class="casella casella5"></div>
-                <div class="casella casella6"></div>
-            </div>
-            <div class="riga riga3">
-                <div class="casella casella1"></div>
-                <div class="casella casella2"></div>
-                <div class="casella casella3"></div>
-                <div class="casella casella4"></div>
-                <div class="casella casella5"></div>
-                <div class="casella casella6"></div>
-            </div>
-            <div class="riga riga4">
-                <div class="casella casella1"></div>
-                <div class="casella casella2"></div>
-                <div class="casella casella3"></div>
-                <div class="casella casella4"></div>
-                <div class="casella casella5"></div>
-                <div class="casella casella6"></div>
-            </div>
-            <div class="riga riga5">
-                <div class="casella casella1"></div>
-                <div class="casella casella2"></div>
-                <div class="casella casella3"></div>
-                <div class="casella casella4"></div>
-                <div class="casella casella5"></div>
-                <div class="casella casella6"></div>
-            </div>
-            <div class="riga riga6">
-                <div class="casella casella1"></div>
-                <div class="casella casella2"></div>
-                <div class="casella casella3"></div>
-                <div class="casella casella4"></div>
-                <div class="casella casella5"></div>
-                <div class="casella casella6"></div>
-            </div>
+
         </div>
+
+        <!-- Template riga  -->
+        <script id="riga-template" type="text/x-handlebars-template">
+            <div class="riga riga{{numeroRiga}}">
+                <div class="casella casella1"></div>
+                <div class="casella casella2"></div>
+                <div class="casella casella3"></div>
+                <div class="casella casella4"></div>
+                <div class="casella casella5"></div>
+                <div class="casella casella6"></div>
+            </div>
+        </script>
+
         <script src="js/main.js" charset="utf-8"></script>
     </body>
 </html>

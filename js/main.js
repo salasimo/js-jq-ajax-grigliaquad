@@ -1,6 +1,12 @@
 $(document).ready(function() {
 
+    var source = $("#riga-template").html();
+    var template = Handlebars.compile(source);
+
+    inserisciRiga();
+
     $(".casella").on("click", riempiCasella);
+
 
     // Funzioni ============================
 
@@ -27,6 +33,16 @@ $(document).ready(function() {
             }
 
         });
+    };
+
+    function inserisciRiga(){
+        for (var i = 1; i <= 6; i++) {
+            var riga = {
+                numeroRiga: i
+            };
+            var templateCompilato = template(riga);
+            $(".container").append(templateCompilato);
+        };
     };
 
 
