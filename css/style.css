@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    margin: auto;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.riga{
+    height: 70px;
+    display: flex;
+}
+
+.riga:last-of-type{
+    border-bottom: 1px solid black;
+}
+
+.casella{
+    height: 70px;
+    width: 70px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: red;
+}
+
+.casella:first-of-type{
+    border-left: 1px solid black;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
